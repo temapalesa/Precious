@@ -1,0 +1,10 @@
+<div   *ngFor="let items of Rooms" class="card" style="width:400px">
+    <img class="card-img-top" src="{{items.image}}" alt="Card image" style="width:100%">
+    <div class="card-body">
+      <h4 class="card-title">{{items.title}}</h4>
+      <p class="card-text">{{items.description}}</p>
+      <p class="card-text">{{items.price}}</p>
+      <!--<a class="btn btn-primary" (click)=seeProfile(items) >See Profile</a>-->
+      <a class="btn btn-primary" (click)=seeProfile(items) >View Room</a>
+    </div>
+  </div>

@@ -1,0 +1,27 @@
+<body style="font-family: Raleway, sans-serif;">
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-search" style="background: #262626;">
+        <div class="container"><a class="navbar-brand" routerLink="/" style="color: rgb(255,255,255);"><i class="fas fa-door-open" style="color: #DEAE05;"></i>LaItalia</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-style: none;"><span class="visually-hidden">Toggle navigation</span></button>
+           
+        </div>
+    </nav>
+    
+    <div *ngFor="let data of Rooms">
+        <div id="header1">{{Rooms[0].title}}</div>
+        <div class="card position-absolute top-50 start-50 translate-middle" style="width: 18rem; border: none;">
+            
+            <img class="card-img-top" style="border-radius:5% ; "src="{{Rooms[0].image}}" alt="Card image cap">
+
+            <div class="card-body">
+              <h5 class="card-title">{{Rooms[0].description}}</h5>
+              <p class="card-text">{{Rooms[0].description}} </p>  
+              <br>
+              <h5 class="card-title">Additional</h5>
+              <p class="card-text">{{Rooms[0].additional}} </p>
+              
+              
+              <a href="#" class="btn btn-primary">Go some where</a>
+
+            </div>
+          </div>
+    </div>
+</body>
